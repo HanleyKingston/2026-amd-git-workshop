@@ -1,6 +1,6 @@
 
 # Load data
-str9_encrypted = open("..\\encrypted_data\\9.txt").read()
+str9_encrypted = open("./encrypted_data/9.txt").read()
 
 # Decryption
 def decrypt(encrypted_message:str, key:int) -> str:
@@ -14,6 +14,5 @@ def decrypt(encrypted_message:str, key:int) -> str:
 str9_decrypted = decrypt(encrypted_message = str9_encrypted, key = 9)
 
 # Save Decrypted data
-with open("..\\workshop_data\\9.txt", "w") as file:
+with open("./workshop_data/9.txt", "w") as file:
     file.write(str9_decrypted)
-
