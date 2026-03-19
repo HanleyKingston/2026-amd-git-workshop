@@ -1,5 +1,3 @@
-import os
-
 #!/usr/bin/env python3
 
 def read_file(path: str) -> str:
